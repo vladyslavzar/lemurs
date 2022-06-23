@@ -14,44 +14,54 @@
   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header --white">
+  <header class="header --white" style="overflow: hidden;">
     <div class="header__container container --smalText">
       <img src="images/logo-green.png" alt="logo" style="margin-right: 10px; cursor: pointer;" >
       <nav class="header__container__nav">
         <ul class="header__container__nav__list --midWText ">
-          <li>Услуги и цены</li>
-          <li>Портфолио</li>
-          <li>О нас</li>
-          <li>Контакты</li>
+          <div style="display: flex;">
+            <li>Услуги и цены</li>
+            <li>Портфолио</li>            
+          </div>
+          <div style="display: flex; margin-left: 59px;">
+            <li>О нас</li>
+            <li>Контакты</li>            
+          </div>
         </ul>
         <div class="header__container__nav__aside --smallWText">
           <a href="tel: +380689167037" class="--white" style="margin-right: 30px; cursor: pointer;">+38 (068) 916 70 37</a>
-          <button class="--midWText mainBtn --white" style="margin-right: 40px; cursor: pointer;" >Обговорити проект</button>
-          <div class="header__container__nav__aside__lang" style="cursor: pointer;">
-            <span>UA</span>
+          <button class="mainBtn --smallText --midWText --white" style="margin-right: 40px; cursor: pointer;" >Обговорити проект</button>
+          <select class="header__container__nav__aside__lang" style="cursor: pointer; background-color: transparent; color: #fff;">
+            <option value="third"><span>UA</span></option>
             <img src="images/arrow.png" alt="drop down"> 
-          </div>
+          </select>
         </div>
       </nav>
     </div>
     <div class="header__secondContainer container">
       <div class="header__secondContainer__main --smallWText">
-        <h1 class="--massiveText --tinyWText">Розробка<br>
-          сайтів будь-який<br>
-          складності</h1>
-        <p style="margin: 40px 0;">Задача организации, в особенности же реализация намеченных<br>
+        <h1 class="--massiveText --tinyWText" id="mainHeadline">Розробка</h1>
+        <h1 class="--massiveText --tinyWText" id="mainHeadlineb">сайтів будь-який</h1> 
+        <h1 class="--massiveText --tinyWText" id="mainHeadlinec"> складності</h1>
+        <p style="margin: 40px 0; line-height: 150%; opacity: 0.8;">Задача организации, в особенности же реализация намеченных<br>
           плановых заданий влечет за собой процесс внедрения и модернизации<br>
           дальнейших направлений развития. </p>
-        <button class="mainBtn --white">Обговорити проект</button>
+        <button class="mainBtn --smallText --midWText --white">Обговорити проект</button>
       </div>
     </div>
+    <div src="images/logo-elipse.png" id="mediaNone" alt="" style="position: absolute; top: 215px; right: 290px; z-index: 2; width: 250px; height: 250px;" >
+      <img src="images/rotatingText.png" alt=""style="position: absolute; top: 0px; left: 0px;" id="logoElipse">
+      <img src="images/centerLogo.png" alt=""style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+    </div>
+    <img src="images/mouseimg.png" alt="" style="position: absolute; bottom: 49px; left: 50%; transform: translateX(-50%); z-index: 2;" id="mouse">
+    <img src="images/fullHeaderBg.png" style="position: absolute; top: -50%; left: -50%;"alt="" id="headerbg">
   </header>
-  <section class="bottomBanner"></section>
+  <section class="bottomBanner"><img src="images/running1.png" alt="" id='runninga'></section>
   <section class="services">
     <div class="services__container container">
       <div class="services__container__main">
         <div class="services__container__main__top">
-          <h2 class="--black --hugeText --tinyWText">Услуги</h2>
+          <h2 class="--black --hugeText --tinyWText typinganimation">Услуги</h2>
           <a href="" class="--red --bigText --bigWText">Посмотреть все</a>
         </div>
         <p class="--black --smallText" style="opacity: 0.8;">Задача организации, в особенности же реализация намеченных<br>
@@ -59,67 +69,84 @@
         <div class="services__container__main__inner">
           <div class="services__container__main__inner__row">
             <div class="services__container__main__inner__row__item">
-              <div class="services__container__main__inner__row__item__top"><span>01</span><img src="images/linkArrow.png" alt=""></div>
+              <div class="services__container__main__inner__row__item__top"><span>01</span><img src="images/linkArrow.png" alt=""><img class="whiteArrow" src="images/arrowWhite.png" alt=""></div>
               <div class="services__container__main__inner__row__item__bot">
                 <div class="tag --white --bigWText --smallText --greenbg" class="--white --bigWText --smallText">Популярно</div>
                 <h3 class="--bigMidText --black --tinyWText">Landing page</h3>
+                <p class="--smallText --tinyWText" style="margin: 10px 0 20px 0;">Задача организации, <br>в особенности же реализация <br>намеченных плановых заданий <br>влечет за собой процесс внедрения <br>и модернизации дальнейших </p>
+                <p class="--smallText --smallWText --red">от 349$</p>
               </div>
             </div>
             <div class="services__container__main__inner__row__item">
-              <div class="services__container__main__inner__row__item__top"><span>02</span><img src="images/linkArrow.png" alt=""></div>
+              <div class="services__container__main__inner__row__item__top"><span>02</span><img src="images/linkArrow.png" alt=""><img class="whiteArrow" src="images/arrowWhite.png" alt=""></div>
               <div class="services__container__main__inner__row__item__bot">
                 <h3 class="--bigMidText --black --tinyWText">Сайт-візитка</h3>
+                <p class="--smallText --tinyWText" style="margin: 10px 0 20px 0;">Задача организации, <br>в особенности же реализация <br>намеченных плановых заданий <br>влечет за собой процесс внедрения <br>и модернизации дальнейших </p>
+                <p class="--smallText --smallWText --red">от 349$</p>
               </div>
             </div>
             <div class="services__container__main__inner__row__item">
-              <div class="services__container__main__inner__row__item__top"><span>03</span><img src="images/linkArrow.png" alt=""></div>
+              <div class="services__container__main__inner__row__item__top"><span>03</span><img src="images/linkArrow.png" alt=""><img class="whiteArrow" src="images/arrowWhite.png" alt=""></div>
               <div class="services__container__main__inner__row__item__bot">
                 <div class="tag --white --bigWText --smallText --redbg" class="">Новое</div>
                 <h3 class="--bigMidText --black --tinyWText">Сайт-представництво</h3>
+                <p class="--smallText --tinyWText" style="margin: 10px 0 20px 0;">Задача организации, <br>в особенности же реализация <br>намеченных плановых заданий <br>влечет за собой процесс внедрения <br>и модернизации дальнейших </p>
+                <p class="--smallText --smallWText --red">от 349$</p>
               </div>
             </div>
           </div>
           <div class="services__container__main__inner__row">
-            <div class="services__container__main__inner__row__item">
-              <div class="services__container__main__inner__row__item__top"><span>04</span><img src="images/linkArrow.png" alt=""></div>
+            <div class="services__container__main__inner__row__item" id="a">
+              <div class="services__container__main__inner__row__item__top"><span>04</span><img src="images/linkArrow.png" alt=""><img class="whiteArrow" src="images/arrowWhite.png" alt=""></div>
               <div class="services__container__main__inner__row__item__bot">
                 <h3 class="--bigMidText --black --tinyWText">Сайт-каталог</h3>
+                <p class="--smallText --tinyWText" style="margin: 10px 0 20px 0;">Задача организации, <br>в особенности же реализация <br>намеченных плановых заданий <br>влечет за собой процесс внедрения <br>и модернизации дальнейших </p>
+                <p class="--smallText --smallWText --red">от 349$</p>
               </div>
             </div>
-            <div class="services__container__main__inner__row__item">
-              <div class="services__container__main__inner__row__item__top"><span>05</span><img src="images/linkArrow.png" alt=""></div>
+            <div class="services__container__main__inner__row__item" id="b">
+              <div class="services__container__main__inner__row__item__top"><span>05</span><img src="images/linkArrow.png" alt=""><img class="whiteArrow" src="images/arrowWhite.png" alt=""></div>
               <div class="services__container__main__inner__row__item__bot">
                 <h3 class="--bigMidText --black --tinyWText">Інтернет-магазин</h3>
+                <p class="--smallText --tinyWText" style="margin: 10px 0 20px 0;">Задача организации, <br>в особенности же реализация <br>намеченных плановых заданий <br>влечет за собой процесс внедрения <br>и модернизации дальнейших </p>
+                <p class="--smallText --smallWText --red">от 349$</p>
               </div>
             </div>
             
-            <div class="services__container__main__inner__row__item">
-              <div class="services__container__main__inner__row__item__top"><span>06</span><img src="images/linkArrow.png" alt=""></div>
+            <div class="services__container__main__inner__row__item" id="c">
+              <div class="services__container__main__inner__row__item__top"><span>06</span><img src="images/linkArrow.png" alt=""><img class="whiteArrow" src="images/arrowWhite.png" alt=""></div>
               <div class="services__container__main__inner__row__item__bot">
                 <h3 class="--bigMidText --black --tinyWText">Підтримка сайтів</h3>
+                <p class="--smallText --tinyWText" style="margin: 10px 0 20px 0;">Задача организации, <br>в особенности же реализация <br>намеченных плановых заданий <br>влечет за собой процесс внедрения <br>и модернизации дальнейших </p>
+                <p class="--smallText --smallWText --red">от 349$</p>
               </div>
             </div>
           </div>
           <div class="services__container__main__inner__row">
-            <div class="services__container__main__inner__row__item">
-              <div class="services__container__main__inner__row__item__top"><span>07</span><img src="images/linkArrow.png" alt=""></div>
+            <div class="services__container__main__inner__row__item" id="d">
+              <div class="services__container__main__inner__row__item__top"><span>07</span><img src="images/linkArrow.png" alt=""><img class="whiteArrow" src="images/arrowWhite.png" alt=""></div>
               <div class="services__container__main__inner__row__item__bot">
                 <div class="tag --white --bigWText --smallText --purplebg" class="--white --bigWText --smallText">Другой тэг</div>
                 <h3 class="--bigMidText --black --tinyWText">Хостинг сайтів</h3>
+                <p class="--smallText --tinyWText" style="margin: 10px 0 20px 0;">Задача организации, <br>в особенности же реализация <br>намеченных плановых заданий <br>влечет за собой процесс внедрения <br>и модернизации дальнейших </p>
+                <p class="--smallText --smallWText --red">от 349$</p>
               </div>
             </div>
-            <div class="services__container__main__inner__row__item">
-              <div class="services__container__main__inner__row__item__top"><span>08</span><img src="images/linkArrow.png" alt=""></div>
+            <div class="services__container__main__inner__row__item" id="e">
+              <div class="services__container__main__inner__row__item__top"><span>08</span><img src="images/linkArrow.png" alt=""><img class="whiteArrow" src="images/arrowWhite.png" alt=""></div>
               <div class="services__container__main__inner__row__item__bot">
                 <h3 class="--bigMidText --black --tinyWText">Дизайн та поліграфія</h3>
+                <p class="--smallText --tinyWText" style="margin: 10px 0 20px 0;">Задача организации, <br>в особенности же реализация <br>намеченных плановых заданий <br>влечет за собой процесс внедрения <br>и модернизации дальнейших </p>
+                <p class="--smallText --smallWText --red">от 349$</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="cupon">
-          <img src="images/lemur1.png" alt="">
-          <div class="cupon__main">
-            <img src="images/32.png" alt="">
+        <div class="cupon" style="position: relative; overflow: hidden;">
+          <img src="images/lemur1.png" alt="" class="lemurAnim" style="position: relative; z-index: 2; transform: scale(0.8);">
+          <img src="images/secondGradient.png" alt="" style="position: absolute; top: -100%; left: -40%;" id="newGradient">
+          <div class="cupon__main" style="position: relative; z-index: 2;">
+            <img src="images/32.png" alt="" id="makeBigMedia">
             <h4 class="--bigMidText --bigWText --white">на все заказы</h4>
             <p class="--smallText --smallWText --white">Заказывай любую услугу в течении 3-х дней и получи<br>
               скидку до 40%</p>
@@ -129,7 +156,181 @@
       </div>
     </div>
   </section>
+  <section class="features">
+    <div class="features__container">
+      <div class="features__container__main" class="--black">
+        <h2 class="--hugeText --tinyWText">Чому обирають нас</h2>
+        <div class="features__container__main__item" style="padding-left: 104px; margin-bottom: 0px;">
+          <h3 class="--bigMidText --tinyWText" ><span class="--green">1</span>Професіоналізм</h3><br>
+          <p class="--smallText --tinyWText">Для нас – це сукупність, знань, практичного<br> досвіду і професійних навиків. Ми прагнемо <br>створювати не просто вражаючі, а <br>максимально корисні та дієві речі.</p>
+        </div>
+        <div class="features__container__main__item" style="padding-left: auto; margin-bottom: 103px;">
+          <h3 class="--bigMidText --tinyWText" style="margin-left: auto; max-width: 367px;"><span class="--red">2</span>Ми бережемо ваш час</h3><br>
+          <p class="--smallText --tinyWText" style="margin-left: auto; max-width: 367px;">Ми працюємо повністю в онлайн режимі. Ви не <br>витрачаєте час на дорогу, та перемовини. Все в <br>режимі чату та онлайн конференцій</p>
+        </div>
+        <div class="features__container__main__item" style="padding-left: 174px; margin-bottom: 118px;">
+          <h3 class="--bigMidText --tinyWText" ><span class="--purple">3</span>Допомагаємо армії та волонтерам</h3><br>
+          <p>Ми любимо нашу країну. Платимо податки тому працюємо за <br>договором. 30% від доходу віддаємо на зсу, волонтерам або <br>можемо з вами купити продуктів та відвезти тим хто цього <br>потребує (діткам, пенсіонерам або переселенцям)</p>
+        </div>
+        <div class="features__container__main__item" style="padding-left: auto; margin-bottom: 103px;">
+          <h3 class="--bigMidText --tinyWText" style="margin-left: auto; max-width: 472px;"><span class="--green">4</span>Швидкість</h3><br>
+          <p class="--smallText --tinyWText" style="margin-left: auto; max-width: 472px;">Технології не стоять на місці, тому ми приділяємо увагу <br>сучасним тенденціям і швидко адаптовуємось до змін.<br>
+            Цінуємо час клієнтів, дедлайн нас не лякає</p>
+        </div>
+        <div class="features__container__main__item" style="padding-left: 104px; margin-bottom: 93px;">
+          <h3 class="--bigMidText --tinyWText"><span class="--red">5</span>Працюємо на результат та рекомендації</h3><br>
+          <p class="--smallText --tinyWText">Технології не стоять на місці, тому ми приділяємо увагу <br>сучасним тенденціям і швидко адаптовуємось до змін.<br>
+            Цінуємо час клієнтів, дедлайн нас не лякає</p>
+        </div>
+        <img src="images/image1.jpg" alt="" style="top: 144px; right: 54px;">
 
+        <img src="images/image2.jpg" alt="" style="top: 437px; left: 0px;">
+
+        <img src="images/image3.jpg" alt="" style="top: 843px; right: 166px;">
+      </div>
+    </div>
+  </section>
+  <section class="portfolio">
+    <div class="portfolio__container container">
+      <div class="portfolio__container__main">
+        <div class="portfolio__container__main__top">
+          <h2 class="--black --hugeText --tinyWText typinganimation">Услуги</h2>
+          <a href="" class="--red --bigText --bigWText">Посмотреть все</a>
+        </div>
+        <div class="portfolio__container__main__tabs">
+          <div class="portfolio__container__main__tabs__item"><span class="--smallText --bigWText">Все</span></div>
+          <div class="portfolio__container__main__tabs__item"><span class="--smallText --bigWText">Веб-сайты</span></div>
+          <div class="portfolio__container__main__tabs__item"><span class="--smallText --bigWText">Сайт-візитка</span></div>
+          <div class="portfolio__container__main__tabs__item"><span class="--smallText --bigWText">Сайт-каталог</span></div>
+        </div>
+        <div class="portfolio__container__main__inner">
+          <div class="portfolio__container__main__inner__row">
+            <div class="portfolio__container__main__inner__row__item">
+              <img src="images/tabs/ozon.jpg" alt="">
+              <div class="portfolio__container__main__inner__row__item__bot">
+                <h6>Ozon</h6>
+                <span>Мобильное приложение</span>
+              </div>
+            </div>
+            <div class="portfolio__container__main__inner__row__item">
+              <img src="images/tabs/mycar.jpg" alt="">
+              <div class="portfolio__container__main__inner__row__item__bot">
+                <h6>MyCar</h6>
+                <span>Сайт</span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__container__main__inner__row">
+            <div class="portfolio__container__main__inner__row__item">
+              <img src="images/tabs/pyatorochka.jpg" alt="">
+              <div class="portfolio__container__main__inner__row__item__bot">
+                <h6>Пятерочка</h6>
+                <span>Приложение</span>
+              </div>
+            </div>
+            <div class="portfolio__container__main__inner__row__item">
+              <img src="images/tabs/mypet.jpg" alt="">
+              <div class="portfolio__container__main__inner__row__item__bot">
+                <h6>MyPet</h6>
+                <span>Приложение</span>
+              </div>
+            </div>
+            <div class="portfolio__container__main__inner__row__item">
+              <img src="images/tabs/ostin.jpg" alt="">
+              <div class="portfolio__container__main__inner__row__item__bot">
+                <h6>Ostin</h6>
+                <span>Приложение</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="secondBanner"><img src="images/agencybormalbot.png" alt="" id="runningb"></section>
+  <section class="aboutUs --black">
+    <div class="aboutUs__container container">
+      <div class="aboutUs__container__main">
+        <div class="aboutUs__container__main__top">
+          <img src="images/lemur2.png" alt="" id="swing">
+          <div class="aboutUs__container__main__top__inner ">
+            <div class="aboutUs__container__main__top__inner__top"><h2 class="--hugeText --tinyWText typinganimation">О нас</h2> <a href="" class="--bigWText --bigText --red">Подробнее</a></div>
+            <p class="--smallWText --smallText">Первое знакомство происходит с проект-менеджером (клиент-менеджером, <br>аккаунт-менеджером, как угодно). Именно этот человек связующее звено <br>между клиентом и всеми другими отделами компании. Его основная задача – <br>определить потребность и на основе своего опыта предложить наиболее <br>рациональное, с точки зрения затрат и окупаемости решение. Так проходит <br>первый этап. На втором этапе формируется структура будущего сайта с <br>учетом всех пожеланий клиента. Будет это корпоративный</p>
+          </div>
+        </div>
+        <div class="aboutUs__container__main__bot">
+          <div class="aboutUs__container__main__bot__item">
+            <h3 class="--hugeText --tinyWText --purple " ><span class="numbInc" id="numbsssasInca">100</span>k+</h3>
+            <h6 class="--tinyWText --smallText">Клієнтів дизайн та <br>поліграфія</h6>
+          </div>
+          <div class="aboutUs__container__main__bot__item">
+            <h3 class="--hugeText --tinyWText --red " ><span class="numbInc" id="numbsInca">25</span>+</h3>
+            <h6 class="--tinyWText --smallText">Landing page </h6>
+          </div>
+          <div class="aboutUs__container__main__bot__item">
+            <h3 class="--hugeText --tinyWText --green " ><span class="numbInc" id="numbIncass">10</span>+</h3>
+            <h6 class="--tinyWText --smallText">Cайт візитка</h6>
+          </div>
+          <div class="aboutUs__container__main__bot__item">
+            <h3 class="--hugeText --tinyWText --red " ><span class="numbInc" id="numbIncssa">6</span>+</h3>
+            <h6 class="--tinyWText --smallText">Представництво</h6>
+          </div>
+          <div class="aboutUs__container__main__bot__item">
+            <h3 class="--hugeText --tinyWText --purple " ><span class="numbInc"id="numbIncsa">8</span>+</h3>
+            <h6 class="--tinyWText --smallText">Сайт каталог</h6>
+          </div>
+          <div class="aboutUs__container__main__bot__item">
+            <h3 class="--hugeText --tinyWText --green " ><span class="numbInc" id="numbInca">25</span>+</h3>
+            <h6 class="--tinyWText --smallText">Лієнтів на <br>підтримка сайтів</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer --white" style="overflow: hidden;">
+    <img src="images/fullHeaderBg.png" style="position: absolute; top: -50%; left: -50%;"alt="" id="footerbg">
+    <div class="footer__container container">
+      <div class="footer__container__top">
+        <h4 class="--white --tinyWText" style="font-size: 32px; font-family: 'DelaGothic';">Остались вопросы или <br>хотите сделать заказ?</h4>
+        <p class="--white --tinyWText --smallText">Оставьте заявку на звонок и мы с вами свяжемся. <br>Мы с удовольствием вам поможем!</p>
+        <form action="">
+          <input type="text" placeholder="Имя" name="name" class="--smallText --midWText"><input type="text" placeholder="Почта" name="email" class="--smallText --midWText"><input type="text" placeholder="Вопрос" class="--smallText --midWText" name="question">
+          <div class="checkboxline">
+            <div class=""><input type="checkbox" name="checkbox" id=""> <span class="checkmark"></span></div>
+            <p class="--tinyWText" style="font-size: 12px;">Поставив отметку, Вы даете согласие на обработку персональных данных и соглашаетесь<br>
+              c политикой конфиденциальности.</p>
+          </div>
+          <button class="mainBtn --smallText --midWText --white" type="submit">Надіслати</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <footer class="postFooter">
+    <div class="postFooter__container container --white">
+      <img src="images/logo-white.png" alt="logo" style="margin-right: 10px; cursor: pointer;" >
+      <nav class="postFooter__container__nav">
+        <ul class="postFooter__container__nav__list --midWText ">
+          <li>Услуги и цены</li>
+          <li>Портфолио</li>
+          <li>О нас</li>
+          <li>Контакты</li>
+        </ul>
+        <div class="postFooter__container__nav__aside --smallWText">
+          <a href="mailto: lemurs@info.com" class="--white" style="margin-right: 30px; cursor: pointer;">lemurs@info.com</a>
+          <div class="postFooter__container__nav__aside__lang" style="cursor: pointer;">
+            <span>UA</span>
+            <img src="images/arrow.png" alt="drop down"> 
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="postFooter__secondContainer container --white">
+      <p>© 2021 Primax Technology. All rights reserved.Designed by Design Department.</p>
+      <a href=""><img src="images/instagram.png" alt="instagram link"></a>
+    </div>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
